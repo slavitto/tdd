@@ -34,8 +34,8 @@ describe('calculator',() => {
 	it('should return sum of several numbers', () => {
 
 		let calculator = createCalculator();
-		let sum = calculator.add('1,2');
-		expect(sum).to.equal(1 + 2);
+		let sum = calculator.add('1,2,3');
+		expect(sum).to.equal(1 + 2 + 3);
 
 	});
 
