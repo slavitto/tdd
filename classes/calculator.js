@@ -15,13 +15,15 @@ module.exports = class Calculator {
 		} 
 
 		if(input.length > 1) {
-			let strings = input.split('\n'), sumStrings = 0, negative = [], values;
+			let strings = input.split('\n'), 
+				sumStrings = 0, 
+				negative = [], 
+				values;
 			strings.forEach(string => {
 				values = string.split(',');
 				for(var j = 0, sum = 0; j < values.length; j++) {
 					if (values[j]) sum += parseInt(values[j]);
 					if(values[j] < 0) negative.push(values[j]);
-				// console.log(/\d/.test(values[j]));
 				}
 				sumStrings += sum;
 			});
